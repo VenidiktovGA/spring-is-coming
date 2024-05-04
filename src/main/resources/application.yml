@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: money-raven
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+iron-bank:
+  repay-debts: #те-кто-возвращают-долги
+    - Ланистеры
