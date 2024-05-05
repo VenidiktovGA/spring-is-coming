@@ -8,6 +8,12 @@
     {
       "name": "iron-starter.raven",
       "type": "ru.venidiktov.properties.IronProperties$RavenProperties",
+      "sourceType": "ru.venidiktov.properties.IronProperties",
+      "sourceMethod": "getRaven()"
+    },
+    {
+      "name": "iron-starter.raven",
+      "type": "ru.venidiktov.properties.IronProperties$RavenProperties",
       "sourceType": "ru.venidiktov.properties.IronProperties$RavenProperties"
     }
   ],
@@ -20,24 +26,23 @@
       "defaultValue": "false"
     },
     {
-      "name": "iron-starter.raven.enabled",
-      "type": "java.lang.Boolean",
-      "sourceType": "ru.venidiktov.properties.IronProperties.RavenProperties",
-      "description": "включить отправку ворона",
-      "defaultValue": "false"
+      "name": "iron-starter.raven.where-to-fly",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "ru.venidiktov.properties.IronProperties$RavenProperties",
+      "description": "куда лететь ворону"
     }
   ],
   "hints": [
     {
-      "name": "iron-starter.raven.enabled",
+      "name": "iron-starter.enabled",
       "values": [
         {
           "value": "true",
-          "description": "включить отправку ворона"
+          "description": "включить iron-starter"
         },
         {
           "value": "false",
-          "description": "выключить отправку ворона"
+          "description": "выключить iron-starter"
         }
       ]
     }

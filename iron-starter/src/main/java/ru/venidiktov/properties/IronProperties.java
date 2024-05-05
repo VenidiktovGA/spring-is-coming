@@ -9,6 +9,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.NestedConfigurationProperty;
 
+import java.util.List;
+
 @Slf4j
 @Getter
 @Setter
@@ -34,6 +36,6 @@ public class IronProperties {
     public static class RavenProperties {
         public static final String PREFIX = IronProperties.PREFIX + ".raven";
 
-        private boolean enabled;
+        private List<String> whereToFly;
     }
 }

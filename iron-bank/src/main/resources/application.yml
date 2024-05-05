@@ -12,4 +12,7 @@ iron-bank:
 iron-starter:
   enabled: true #todo Пока не получилось чтоб нормально подтянулось описание из файла spring-configuration-metadata.json
   raven:
-    enabled: true
+    where-to-fly:
+      - Браавос, главное отделение
+      - Утес Кастерли, главное отделение
+      - Стена, отделение Джона Сноу
