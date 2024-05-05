@@ -7,9 +7,9 @@ import ru.venidiktov.springiscoming.properties.ProphetProperties;
 
 @SpringBootApplication
 @EnableConfigurationProperties(ProphetProperties.class)
-public class SpringIsComingApplication {
+public class IronBankApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringIsComingApplication.class, args);
+        SpringApplication.run(IronBankApplication.class, args);
     }
 }

@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: money-raven
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+iron-bank:
+  repay-debts: #те-кто-возвращают-долги
+    - Ланистеры
+
+iron-starter:
+  enabled: true #todo Пока не получилось чтоб нормально подтянулось описание из файла spring-configuration-metadata.json
+  raven:
+    enabled: true

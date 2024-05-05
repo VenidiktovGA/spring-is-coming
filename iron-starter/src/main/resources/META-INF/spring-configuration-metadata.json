@@ -1,0 +1,45 @@
+{
+  "groups": [
+    {
+      "name": "iron-starter",
+      "type": "ru.venidiktov.properties.IronProperties",
+      "sourceType": "ru.venidiktov.properties.IronProperties"
+    },
+    {
+      "name": "iron-starter.raven",
+      "type": "ru.venidiktov.properties.IronProperties$RavenProperties",
+      "sourceType": "ru.venidiktov.properties.IronProperties$RavenProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "iron-starter.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "ru.venidiktov.properties.IronProperties",
+      "description": "включить конфигурирование iron-starter",
+      "defaultValue": "false"
+    },
+    {
+      "name": "iron-starter.raven.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "ru.venidiktov.properties.IronProperties.RavenProperties",
+      "description": "включить отправку ворона",
+      "defaultValue": "false"
+    }
+  ],
+  "hints": [
+    {
+      "name": "iron-starter.raven.enabled",
+      "values": [
+        {
+          "value": "true",
+          "description": "включить отправку ворона"
+        },
+        {
+          "value": "false",
+          "description": "выключить отправку ворона"
+        }
+      ]
+    }
+  ]
+}
