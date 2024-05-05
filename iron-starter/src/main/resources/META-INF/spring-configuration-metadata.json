@@ -26,6 +26,13 @@
       "defaultValue": "false"
     },
     {
+      "name": "iron-starter.raven.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "ru.venidiktov.properties.IronProperties.RavenProperties",
+      "description": "включить отправку ворона",
+      "defaultValue": "false"
+    },
+    {
       "name": "iron-starter.raven.where-to-fly",
       "type": "java.util.List<java.lang.String>",
       "sourceType": "ru.venidiktov.properties.IronProperties$RavenProperties",

@@ -36,6 +36,7 @@ public class IronProperties {
     public static class RavenProperties {
         public static final String PREFIX = IronProperties.PREFIX + ".raven";
 
+        private boolean enabled;
         private List<String> whereToFly;
     }
 }
