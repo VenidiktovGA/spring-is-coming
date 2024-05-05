@@ -6,13 +6,15 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
+import ru.venidiktov.conditional.ConditionalOnProduction;
 import ru.venidiktov.properties.IronProperties;
 
 /**
- * Полаем ворона когда приложение начинает работать, то-есть когда контекст закончил свое построение
+ * Посылаем ворона когда банк начинает работать, то-есть когда контекст закончил свое построение
  */
 @Slf4j
 @Component
+@ConditionalOnProduction
 @ConditionalOnProperty(prefix = IronProperties.RavenProperties.PREFIX, name = "enabled", havingValue = "true")
 public class RavenListener implements ApplicationListener<ContextRefreshedEvent> {
 
