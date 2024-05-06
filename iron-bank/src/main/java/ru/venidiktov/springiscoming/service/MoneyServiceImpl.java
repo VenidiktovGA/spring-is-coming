@@ -26,7 +26,7 @@ public class MoneyServiceImpl implements MoneyService {
     @Override
     public long transfer(String name, long amount) {
         Bank ironBank = bankDao.getIronBank();
-        if (ironBank.getTotalAmount() - amount > 0 && prophetService.willSurvive(name)) {
+        if (ironBank.getTotalAmount() - amount > 0 && prophetService.approveCredit(name)) {
             ironBank.credit(amount);
             return ironBank.getTotalAmount();
         }

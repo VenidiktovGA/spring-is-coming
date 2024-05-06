@@ -3,10 +3,11 @@ package ru.venidiktov.springiscoming;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
-import ru.venidiktov.springiscoming.properties.ProphetProperties;
+import ru.venidiktov.springiscoming.initializer.ProfileCheckInitializer;
+import ru.venidiktov.springiscoming.properties.IronBankProperties;
 
 @SpringBootApplication
-@EnableConfigurationProperties(ProphetProperties.class)
+@EnableConfigurationProperties(IronBankProperties.class)
 public class IronBankApplication {
 
     public static void main(String[] args) {
@@ -16,6 +17,11 @@ public class IronBankApplication {
          */
         SpringApplicationBuilder builder = new SpringApplicationBuilder(IronBankApplication.class);
         builder.headless(false);
+        /**
+         * Так как ProfileCheckInitializer должен отработать до того как начнут создаваться бины
+         * ProfileCheckInitializer отработает когда контекст создан но в нем нет ничего кроме Environment
+         */
+        builder.initializers(new ProfileCheckInitializer());
         builder.run(args);
     }
 }

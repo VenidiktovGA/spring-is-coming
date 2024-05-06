@@ -7,7 +7,7 @@ spring:
 
 iron-bank:
   repay-debts: #те-кто-возвращают-долги
-    - Ланистеры
+    - Lannister
 
 iron-starter:
   enabled: true #todo Пока не получилось чтоб нормально подтянулось описание из файла spring-configuration-metadata.json

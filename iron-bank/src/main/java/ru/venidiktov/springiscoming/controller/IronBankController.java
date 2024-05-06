@@ -30,8 +30,9 @@ public class IronBankController {
     })})})
     public String credit(
             @RequestParam @Parameter(description = "Дом", example = "Stark", examples = {
-                    @ExampleObject(name = "Stark", value = "Stark"), @ExampleObject(name = "Targaryen", value = "Targaryen")})
-            String name,
+                    @ExampleObject(name = "Stark", value = "Stark"),
+                    @ExampleObject(name = "Targaryen", value = "Targaryen"),
+                    @ExampleObject(name = "Lannister", value = "Lannister")}) String name,
             @RequestParam @Parameter(description = "Сумма золота", example = "1000") long amount) {
         long resultDeposit = moneyService.transfer(name, amount);
         if (resultDeposit == -1) {

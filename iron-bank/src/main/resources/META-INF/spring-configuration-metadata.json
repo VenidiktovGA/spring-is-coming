@@ -2,15 +2,15 @@
   "groups": [
     {
       "name": "iron-bank",
-      "type": "ru.venidiktov.springiscoming.properties.ProphetProperties",
-      "sourceType": "ru.venidiktov.springiscoming.properties.ProphetProperties"
+      "type": "ru.venidiktov.springiscoming.properties.IronBankProperties",
+      "sourceType": "ru.venidiktov.springiscoming.properties.IronBankProperties"
     }
   ],
   "properties": [
     {
       "name": "iron-bank.repay-debts",
       "type": "java.util.List<java.lang.String>",
-      "sourceType": "ru.venidiktov.springiscoming.properties.ProphetProperties",
+      "sourceType": "ru.venidiktov.springiscoming.properties.IronBankProperties",
       "description": "те кто возвращают долги"
     }
   ]

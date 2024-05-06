@@ -2,6 +2,7 @@
 
 Проект сделан на основе видео:</br>
 [Евгений Борисов, Кирилл Толкачев — Boot yourself, Spring is coming (Часть 1)](https://www.youtube.com/watch?v=yy43NOreJG4&ab_channel=JPoint%2CJoker%D0%B8JUGru)</br>
+[Евгений Борисов, Кирилл Толкачев — Boot yourself, Spring is coming (Часть 2)](https://www.youtube.com/watch?v=7Cq5zEm2wq0&ab_channel=JPoint%2CJoker%D0%B8JUGru)</br>
 
 ## API Железного банка
 
