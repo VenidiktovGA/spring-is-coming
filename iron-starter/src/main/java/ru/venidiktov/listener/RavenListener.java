@@ -3,10 +3,10 @@ package ru.venidiktov.listener;
 import jakarta.annotation.Nonnull;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
+import ru.venidiktov.conditional.ConditionalOnRaven;
 import ru.venidiktov.conditional.ConditionalOnRavenListener;
 import ru.venidiktov.properties.IronProperties;
 
@@ -19,9 +19,9 @@ import ru.venidiktov.properties.IronProperties;
 @Slf4j
 @Component
 @RequiredArgsConstructor
-//@ConditionalOnProduction //Выключил чтоб pop up не надоедал
+@ConditionalOnRaven
 @ConditionalOnRavenListener
-@ConditionalOnProperty(prefix = IronProperties.RavenProperties.PREFIX, name = "where-to-fly[0]")
+//@ConditionalOnProduction //Выключил чтоб pop up не надоедал
 public class RavenListener implements ApplicationListener<ContextRefreshedEvent> {
     protected final IronProperties.RavenProperties ravenProperties;
 
